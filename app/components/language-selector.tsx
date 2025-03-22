@@ -1,5 +1,6 @@
 "use client"
 
+import React from "react"
 import { useAvatar } from "./avatar-provider"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 

@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Progress } from "@/components/ui/progress"
 import { Badge } from "@/components/ui/badge"
 import { Upload, Database, RefreshCw } from "lucide-react"
+import React from "react"
 
 export function KnowledgeBaseStatus() {
   const [isConnected, setIsConnected] = useState(false)

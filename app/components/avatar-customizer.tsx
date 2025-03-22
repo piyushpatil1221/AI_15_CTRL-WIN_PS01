@@ -4,6 +4,7 @@ import { useAvatar } from "./avatar-provider"
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import React from "react"
 
 export function AvatarCustomizer() {
   const { avatarStyle, setAvatarStyle, avatarEmotion, setAvatarEmotion, avatarGender, setAvatarGender } = useAvatar()

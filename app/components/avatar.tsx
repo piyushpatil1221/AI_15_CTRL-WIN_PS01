@@ -5,6 +5,7 @@ import { useAvatar } from "./avatar-provider"
 import { Skeleton } from "@/components/ui/skeleton"
 import { useToast } from "@/components/ui/use-toast"
 import Image from "next/image"
+import React from "react"
 
 export function Avatar() {
   const { avatarStyle, avatarEmotion, avatarGender, isAvatarSpeaking } = useAvatar()

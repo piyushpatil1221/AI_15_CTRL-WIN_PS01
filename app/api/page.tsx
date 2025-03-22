@@ -1,8 +1,9 @@
-import { Avatar } from "@/components/avatar"
+import { Avatar } from "../components/avatar"
 import { ChatInterface } from "@/components/chat-interface"
 import { LanguageSelector } from "@/components/language-selector"
 import { AvatarCustomizer } from "@/components/avatar-customizer"
 import { KnowledgeBaseStatus } from "@/components/knowledge-base-status"
+import React from "react"
 
 export default function Home() {
   return (

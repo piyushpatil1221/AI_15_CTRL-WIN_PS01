@@ -7,6 +7,7 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 import { Mic, MicOff, Send, Loader2 } from "lucide-react"
 import { useAvatar } from "./avatar-provider"
 import { useToast } from "@/components/ui/use-toast"
+import React from "react"
 
 interface Message {
   id: string

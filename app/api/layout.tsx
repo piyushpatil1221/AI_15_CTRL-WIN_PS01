@@ -1,10 +1,10 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
-import { AvatarProvider } from "@/components/avatar-provider"
-import { Toaster } from "@/components/ui/toaster"
+import React from "react";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "../globals.css"; // Ensure the correct relative path
+import { ThemeProvider } from "../components/theme-provider"; 
+import { AvatarProvider } from "../components/avatar-provider"; 
+import { Toaster } from "../components/toaster";
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -19,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+<html lang="en">
+<body className={inter.className} suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <AvatarProvider>
             {children}
@@ -31,4 +31,3 @@ export default function RootLayout({
     </html>
   )
 }
-
